@@ -1,0 +1,18 @@
+<html>
+<head><title>tempnote</title>
+	<script type="text/javascript" src="jscolor.js"></script>
+	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<body>
+
+<input class="color" id="colorbox" value="ffffff">
+
+<div id="mainbody" style="width:100%;height:1024px;background-color:#ffffff;"></div>
+
+</body>
+<script>
+$('#colorbox').change(function() {
+	var tempcolor = $('#colorbox').val();
+    $('#mainbody').css("background-color",tempcolor);
+});
+</script>
+</html>
